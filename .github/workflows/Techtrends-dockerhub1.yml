@@ -35,8 +35,8 @@ jobs:
           push: true
          # tags: user/python-app:latest
         # tags: ${{ steps.meta_pytorch.outputs.tags }}
-        # tags: ${{ YOUR_DOCKERHUB_REPOSITORY }}/$python-app:latest
-        tags : ${{ env.REGISTRY }}/${{ github.actor }}/${{ github.repository }}:latest
+         tags: ${{ dockerfile_for_techtrends_application }}/$techtrends:latest
+        #tags : ${{ env.REGISTRY }}/${{ github.actor }}/${{ github.repository }}:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
