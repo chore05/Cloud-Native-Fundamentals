@@ -33,7 +33,8 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: user/python-app:latest
+         # tags: user/python-app:latest
+         tags: ${{ steps.meta_pytorch.outputs.tags }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
