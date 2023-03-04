@@ -33,7 +33,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: dockerfile_for_techtrends_application/techtrends:latest
+          tags: dockerfile_for_techtrends_application/techtrends:lastest
         # tags: ${{ steps.meta_pytorch.outputs.tags }}
         # tags: ${{ chore05/dockerfile_for_techtrends_application }}
         # labels: ${{ techtrends }}:latest
