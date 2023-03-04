@@ -27,12 +27,13 @@ jobs:
         uses: docker/build-push-action@v2
        # with:
        #   push: true
-          tags: user/python-app:latest
+         
            with:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
+          tags: user/python-app:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
