@@ -25,10 +25,7 @@ jobs:
         name: Build and push
         id: chore05
         uses: docker/build-push-action@v2
-        #with:
-       #   push: true
-         
-         with:
+        with:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
@@ -41,3 +38,5 @@ jobs:
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+
+        
