@@ -43,3 +43,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: {{ YOUR_DOCKERHUB_REPOSITORY }}/python-app:latest
+
