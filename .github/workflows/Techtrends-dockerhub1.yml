@@ -35,7 +35,7 @@ jobs:
           push: true
          # tags: user/python-app:latest
         # tags: ${{ steps.meta_pytorch.outputs.tags }}
-         tags: chore05/dockerfile_for_techtrends_application
+         tags: ${{ chore05/dockerfile_for_techtrends_application }}
         #tags : ${{ env.REGISTRY }}/${{ github.actor }}/${{ github.repository }}:latest
       -
         name: Image digest
