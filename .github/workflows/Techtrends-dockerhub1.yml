@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       -
         name: Build and push
-        id: docker_build
+        id: chore05
         uses: docker/build-push-action@v2
        # with:
        #   push: true
