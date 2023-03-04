@@ -25,10 +25,10 @@ jobs:
         name: Build and push
         id: chore05
         uses: docker/build-push-action@v2
-        with:
+        #with:
        #   push: true
          
-         #with:
+         with:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
