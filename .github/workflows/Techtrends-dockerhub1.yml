@@ -28,7 +28,7 @@ jobs:
       # with:
       #   push: true
         
-        with:
+         with:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
