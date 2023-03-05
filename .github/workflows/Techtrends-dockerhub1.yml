@@ -30,7 +30,7 @@ jobs:
       #   push: true
         
         with:
-          #context: .
+          context: .
           #file: ./Dockerfile
           #platforms: linux/amd64
           #push: true
