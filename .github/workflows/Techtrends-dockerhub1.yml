@@ -30,12 +30,11 @@ jobs:
         
        with:
           context: .
-          #file: ./Dockerfile
-          file: ./chore05/dockerfile_for_techtrends_application
-          #platforms: linux/amd64
+          file: ./Dockerfile
+          platforms: linux/amd64
           push: true
          # tags: chore05/dockerfile_for_techtrends_application:techtrends:latest
-          tags: techtrends:latest
+          #tags: techtrends:latest
           
         # tags: ${{ steps.meta_pytorch.outputs.tags }}
         # tags: ${{ chore05/dockerfile_for_techtrends_application }}
