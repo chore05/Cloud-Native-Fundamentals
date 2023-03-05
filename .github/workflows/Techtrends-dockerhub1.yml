@@ -28,10 +28,10 @@ jobs:
       # with:
       #   push: true
         
-           with:
+       with:
           context: .
-          file: ./Dockerfile
-          platforms: linux/amd64
+          #file: ./Dockerfile
+          #platforms: linux/amd64
           push: true
          # tags: chore05/dockerfile_for_techtrends_application:techtrends:latest
           tags: techtrends:latest
